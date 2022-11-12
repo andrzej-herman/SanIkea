@@ -540,7 +540,7 @@
   {
     "Id": "4056aa0b-1f4d-4e92-a0b0-634856f6ef84",
     "Name": "FORSÅ",
-    "Category": "lampy",
+    "Category": "Lampy",
     "Price": 74,
     "Images": [
       "https://www.ikea.com/pl/pl/images/products/forsa-lampa-biurkowa-czarny__0609293_pe684430_s5.jpg?f=xl",
@@ -552,7 +552,7 @@
   {
     "Id": "e26e4446-b722-4f7d-b9d6-8a455f019b50",
     "Name": "SOLKLINT",
-    "Category": "lampy",
+    "Category": "Lampy",
     "Price": 60,
     "Images": [
       "https://www.ikea.com/pl/pl/images/products/solklint-lampa-stolowa-mosiadz-szare-szklo-przezroczyste__0842257_pe781832_s5.jpg?f=xl",
@@ -564,7 +564,7 @@
   {
     "Id": "c51716e8-f42c-4358-947c-5fc8a4077e7c",
     "Name": "ENRUM",
-    "Category": "lampy",
+    "Category": "Lampy",
     "Price": 40,
     "Images": [
       "https://www.ikea.com/pl/pl/images/products/enrum-latarenka-na-swiece-brylowa-wew-zew-gleboki-zielony__1081112_pe858246_s5.jpg?f=xl",
@@ -576,7 +576,7 @@
   {
     "Id": "2eada99d-8501-4d47-8e9f-6271ca4ced6d",
     "Name": "VIDJA",
-    "Category": "lampy",
+    "Category": "Lampy",
     "Price": 152,
     "Images": [
       "https://www.ikea.com/pl/pl/images/products/vidja-lampa-podlogowa-bialy__0606512_pe682388_s5.jpg?f=xl",
@@ -588,7 +588,7 @@
   {
     "Id": "cc9c2f7d-44cf-40b7-82ce-a2bd6466a847",
     "Name": "FELSISK",
-    "Category": "lampy",
+    "Category": "Lampy",
     "Price": 109,
     "Images": [
       "https://www.ikea.com/pl/pl/images/products/felsisk-lampa-wiszaca-czarny__0988560_pe818155_s5.jpg?f=xl",

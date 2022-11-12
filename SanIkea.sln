@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonShopDataCreator", "JsonShopDataCreator\JsonShopDataCreator.csproj", "{E3B030C1-BD1E-4CA6-889D-8A21AA5229C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonShopDataCreator", "JsonShopDataCreator\JsonShopDataCreator.csproj", "{E3B030C1-BD1E-4CA6-889D-8A21AA5229C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanIkeaShop", "SanIkeaShop\SanIkeaShop.csproj", "{935915BF-3868-4B1F-99E3-A69377310FFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanIkeaShop", "SanIkeaShop\SanIkeaShop.csproj", "{935915BF-3868-4B1F-99E3-A69377310FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanIkeaCommon", "SanIkeaCommon\SanIkeaCommon.csproj", "{B086C3DA-BF18-46A3-99BD-4274E61172E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{935915BF-3868-4B1F-99E3-A69377310FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{935915BF-3868-4B1F-99E3-A69377310FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{935915BF-3868-4B1F-99E3-A69377310FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B086C3DA-BF18-46A3-99BD-4274E61172E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B086C3DA-BF18-46A3-99BD-4274E61172E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B086C3DA-BF18-46A3-99BD-4274E61172E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B086C3DA-BF18-46A3-99BD-4274E61172E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
