@@ -1,0 +1,37 @@
+﻿@inject IFurnitureService Service
+
+<div class="search-bar-container">
+    <div class="search-bar-left">
+        <div class="search-bar-top w-100">
+            <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Nazwa</RadzenText>
+            <RadzenTextBox Class="w-100" />
+        </div>
+        @if (Categories != null)
+        {
+            <div class="search-bar-bottom w-100 mt-3">
+                <RadzenText TextStyle="TextStyle.Subtitle2" TagName="TagName.H3">Kategoria</RadzenText>
+                <RadzenDropDown AllowClear="true" TValue="string" Data=@Categories Class="w-100" />
+            </div>
+        }
+
+    </div>
+</div>
+<div class="search-bar-right">
+    <RadzenButton ButtonStyle="ButtonStyle.Primary" Size="ButtonSize.Medium" Class="w-100" Text="Szukaj" />
+</div>
+
+@code {
+
+    List<string> Categories { get; set; }
+
+    protected override void OnInitialized()
+    {
+        Categories = Service.GetCategories().ToList();
+    }
+
+}
+
+
+@* Data=@(customers.Select(c => c.CompanyName).Distinct())
+                            Change=@(args => OnChange(args, "DropDown"))*@
+

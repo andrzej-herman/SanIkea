@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JsonShopDataCreator", "Json
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanIkeaShop", "SanIkeaShop\SanIkeaShop.csproj", "{935915BF-3868-4B1F-99E3-A69377310FFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SanIkeaCommon", "SanIkeaCommon\SanIkeaCommon.csproj", "{B086C3DA-BF18-46A3-99BD-4274E61172E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SanIkeaCommon", "SanIkeaCommon\SanIkeaCommon.csproj", "{B086C3DA-BF18-46A3-99BD-4274E61172E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

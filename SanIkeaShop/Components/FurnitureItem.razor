@@ -1,0 +1,16 @@
+﻿<div class="card furniture-item" style="width: 18rem;">
+    <img src="@Furniture.FrontImage" class="card-img-top" alt="@Furniture.Name">
+  <div class="card-body">
+        <h5 class="card-title fw-bold">@Furniture.Name</h5>
+        <p class="card-text">Kategoria: @Furniture.Category</p>
+        <p class="furniture-card-text">Cena: @Furniture.Price PLN</p>
+    <a href="#" class="btn btn-primary">Zobacz szczegóły</a>
+  </div>
+</div>
+
+@code {
+
+    [Parameter]
+    public SimpleFurniture Furniture { get; set; }
+
+}

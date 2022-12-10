@@ -31,25 +31,37 @@ namespace SanIkeaCommon
             return Furnitures.Select(f => f.Category).Distinct().OrderBy(c => c);
         }
 
-        public IEnumerable<Furniture> GetFurnitureByCategory(string category)
+        public IEnumerable<SimpleFurniture> GetFurnitureByCategory(string category)
         {
-            return Furnitures.Where(f => f.Category.ToLower().Contains(category.ToLower()));
+            return Furnitures.Where(f => f.Category.ToLower().Contains(category.ToLower())).Select(f => Map(f));
         }
 
-        public IEnumerable<Furniture> GetFurnitureByName(string name)
+        public IEnumerable<SimpleFurniture> GetFurnitureByName(string name)
         {
-            return Furnitures.Where(f => f.Name.ToLower().Contains(name.ToLower()));   
+            return Furnitures.Where(f => f.Name.ToLower().Contains(name.ToLower())).Select(f => Map(f));   
         }
 
-        public IEnumerable<Furniture> GetFurnitureByPrice(decimal minprice, decimal maxprice)
+        public IEnumerable<SimpleFurniture> GetFurnitureByPrice(decimal minprice, decimal maxprice)
         {
-            return Furnitures.Where(f => f.Price >= minprice && f.Price <= maxprice);
+            return Furnitures.Where(f => f.Price >= minprice && f.Price <= maxprice).Select(f => Map(f));
         }
 
-        public IEnumerable<Furniture> GetPromotedFurniture()
+        public IEnumerable<SimpleFurniture> GetPromotedFurniture()
         {
             var furnitures = Furnitures.OrderBy(f => Random.Next());  
-            return furnitures.Take(6);
+            return furnitures.Take(6).Select(f => Map(f));
+        }
+
+        private SimpleFurniture Map(Furniture furniture)
+        {
+            return new SimpleFurniture
+            {
+                Id = furniture.Id,
+                Name = furniture.Name,
+                Category= furniture.Category,
+                Price = furniture.Price,
+                FrontImage = furniture.Images.First()
+            };
         }
     }
 }

@@ -8,6 +8,7 @@ html, body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #E9F3F5;
 }
 
 
@@ -25,4 +26,73 @@ html, body {
 .shop-header-text {
     color: #fff;
     font-size: 48px;
+}
+
+
+.search-bar-container {
+    padding: 25px 0 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.search-bar-left {
+    flex: 1;
+}
+
+/*.search-bar-right {
+    flex: 0.15;
+}*/
+
+.search-bar-top {
+    display: block;
+}
+
+.shop-catalog-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.furniture-item {
+    margin: 20px;
+    min-width: 360px;
+    width: 360px;
+    background-color: #F5FCFF;
+}
+
+.furniture-card-text {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.shop-footer {
+    margin-top: 40px;
+    padding: 50px;
+    background-color: #1A78C2;
+    text-align: center;
+    color: #fff;
+}
+
+.shop-footer-text {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.empty-space {
+    min-height: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.empty-space-text {
+    color: red;
+    font-size: 20px;
+    text-align: center!important;
 }

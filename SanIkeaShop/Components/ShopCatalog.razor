@@ -1,0 +1,26 @@
+﻿<div class="shop-catalog mt-5">
+    <h3>Dzisiaj w promocji</h3>
+    <div class="shop-catalog-container">
+        @if (Furnitures.Any())
+        {
+            @foreach (var fur in Furnitures)
+            {
+                    <FurnitureItem Furniture="@fur"/>
+            }
+        }
+        else
+        {
+            <div class="empty-space">
+                <div class="empty-space-text">
+                    Brak mebli spełniających kryteria
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public List<SimpleFurniture> Furnitures { get; set; } = new List<SimpleFurniture>();
+
+}

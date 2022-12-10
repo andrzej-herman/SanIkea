@@ -8,10 +8,10 @@ namespace SanIkeaCommon
 {
     public interface IFurnitureService
     {
-        IEnumerable<Furniture> GetPromotedFurniture();
-        IEnumerable<Furniture> GetFurnitureByName(string name);
-        IEnumerable<Furniture> GetFurnitureByCategory(string category);
-        IEnumerable<Furniture> GetFurnitureByPrice(decimal minprice, decimal maxprice);
+        IEnumerable<SimpleFurniture> GetPromotedFurniture();
+        IEnumerable<SimpleFurniture> GetFurnitureByName(string name);
+        IEnumerable<SimpleFurniture> GetFurnitureByCategory(string category);
+        IEnumerable<SimpleFurniture> GetFurnitureByPrice(decimal minprice, decimal maxprice);
         IEnumerable<string> GetCategories();
     }
 }
