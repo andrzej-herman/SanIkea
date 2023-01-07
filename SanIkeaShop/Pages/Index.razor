@@ -3,7 +3,7 @@
 
 <ShopHeader Title="San Ikea Shop"/>
 <div class="container">
-    <ShopSearchBar />
+    <ShopSearchBar UserSelectedCategory="GetFurnituresByCategory"/>
     @if (Furnitures != null)
     {
         <ShopCatalog Furnitures="@Furnitures" />
@@ -20,5 +20,19 @@
     protected override void OnInitialized()
     {
         Furnitures = Service.GetPromotedFurniture().ToList();
+    }
+
+    private void GetFurnituresByCategory(string[] search)
+    {
+        var furnitutres = Service.GetAllFurniture().ToList();
+        if (!string.IsNullOrEmpty(search[0]))
+            furnitutres = Service.GetFurnitureByName(search[0]).ToList();
+
+
+        if (!string.IsNullOrEmpty(search[1]))
+            furnitutres = Service.GetFurnitureByCategory(search[1]).ToList();
+
+
+        Furnitures = furnitutres;
     }
 }

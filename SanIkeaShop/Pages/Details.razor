@@ -1,0 +1,38 @@
+﻿@page "/furniture/{FurnitureID}"
+@inject IFurnitureService Service
+
+<br/>
+<br />
+
+@if (Furniture != null)
+{
+    <p>@Furniture.Name></p>
+    @if (Furniture.Images != null && Furniture.Images.Count() >= 2)
+    {
+        <img src="@Furniture.Images.First()" class="card-img-top" alt="@Furniture.Name">
+        <img src="@Furniture.Images.Last()" class="card-img-top" alt="@Furniture.Name">
+    }
+
+
+}
+
+<br />
+<br />
+
+
+
+
+@code {
+
+    [Parameter]
+    public string FurnitureID { get; set; }
+
+    private Furniture Furniture { get; set; }
+
+
+    protected override void OnInitialized()
+    {
+        Furniture = Service.GetFurnitureById(FurnitureID);
+    }
+
+}

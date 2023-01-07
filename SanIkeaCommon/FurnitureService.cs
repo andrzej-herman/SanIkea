@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Linq;
@@ -62,6 +63,16 @@ namespace SanIkeaCommon
                 Price = furniture.Price,
                 FrontImage = furniture.Images.First()
             };
+        }
+
+        public IEnumerable<SimpleFurniture> GetAllFurniture()
+        {
+            return Furnitures.Select(x => Map(x));
+        }
+
+        public Furniture GetFurnitureById(string id)
+        {
+            return Furnitures.FirstOrDefault(f => f.Id == id);
         }
     }
 }
